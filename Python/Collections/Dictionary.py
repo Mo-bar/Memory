@@ -198,8 +198,9 @@ print(peoples["Sayed"]['Css'])
 
 for name in peoples:
 
-  print(f"Skills and Progress For {name} Is: ")
+    for skill in peoples[name]:
 
-  for skill in peoples[name]:
+        print(f"{skill.upper()} => {peoples[name][skill]}")
 
-    print(f"{skill.upper()} => {peoples[name][skill]}")
+for key,value in peoples.items():
+    print(f'{key} => {value}')
