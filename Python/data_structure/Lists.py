@@ -7,11 +7,6 @@
 # [4] List Items Is Not Unique
 # [5] List Can Have Different Data Types
 
-
-
-from tkinter.tix import Tree
-
-
 lst = ["One", "Two", "One", 1, 100.5, True]
 print('lst[0] ='+lst[0])
 print('lst[-1] ='+str(lst[-1]))
@@ -31,7 +26,7 @@ print(friends[-1][2])
 friends.extend(nbr)  # friends += nbr
 print(friends)
 print('_'*50)
-friends.sort(reverse=Tree)
+friends.sort(reverse=True)
 friends.remove('mouad')
 nbr.reverse()
 print(nbr)
