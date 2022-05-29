@@ -77,3 +77,13 @@ def var():
 #x = 0
 var()
 print(x)
+
+# Recursion Function.
+def removeDouble(wrd):
+    if len(wrd) == 1:
+        return wrd
+    if wrd[0] == wrd[1]:
+        return removeDouble(wrd[1:])
+    return wrd[0] + removeDouble(wrd[1:])
+
+print(removeDouble('wwfffffffkkkkkccccc'))
