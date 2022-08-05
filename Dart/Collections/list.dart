@@ -18,6 +18,14 @@ void main(){
   lst.remove('ah');
   lst.removeAt(2);
   //lst.removeRange(start, end)
+  //lst.sublist(start, [end])
+  //lst.shuffle();  random
+  Map mp = lst.asMap(); // convert list to indexed map.
+  var nbrlist = lst.whereType<int>().toList(); // only return integers
+  var val = nbrlist.firstWhere((x)=> x >2); // return first value greater than 2.
+  //var val = nbrlist.any((element) => false);
+  //var val = nbrlist.every((element) => false);
+  //var val = nbrlist.Take(2).toSet(); // return first 2 elements.
   
   
 }
